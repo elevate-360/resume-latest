@@ -209,4 +209,4 @@ $data = array(
 
 $id = $db->insert('tblContact', $data);
 
-echo json_encode($id);
+echo json_encode(array("data" => "OK"));
