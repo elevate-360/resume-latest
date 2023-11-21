@@ -208,5 +208,5 @@ $data = array(
 );
 
 $id = $db->insert('tblContact', $data);
-
-echo json_encode(array("data" => "OK"));
+echo "OK";
+// echo (array("ok" => true, "data" => "OK"));
