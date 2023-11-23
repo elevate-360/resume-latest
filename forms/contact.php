@@ -41,147 +41,130 @@ $mail->addAddress($email, $name);
 $mail->Subject = 'Thank You ' . $name;
 
 // Set the HTML content of the email body
-$mail->Body = '<html>
+$mail->Body = '<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title>Thank You</title>
-    <style>
-        .card-header {
-            --bs-blue: #0d6efd;
-            --bs-indigo: #6610f2;
-            --bs-purple: #6f42c1;
-            --bs-pink: #d63384;
-            --bs-red: #dc3545;
-            --bs-orange: #fd7e14;
-            --bs-yellow: #ffc107;
-            --bs-green: #198754;
-            --bs-teal: #20c997;
-            --bs-cyan: #0dcaf0;
-            --bs-white: #fff;
-            --bs-gray: #6c757d;
-            --bs-gray-dark: #343a40;
-            --bs-primary: #0d6efd;
-            --bs-secondary: #6c757d;
-            --bs-success: #198754;
-            --bs-info: #0dcaf0;
-            --bs-warning: #ffc107;
-            --bs-danger: #dc3545;
-            --bs-light: #f8f9fa;
-            --bs-dark: #212529;
-            --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-            font-family: var(--bs-font-sans-serif);
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-            color: #212529;
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
-            word-wrap: break-word;
-            box-sizing: border-box;
-            padding: .5rem 1rem;
-            margin-bottom: 0;
-            background-color: rgba(0, 0, 0, .03);
-            border-bottom: 1px solid rgba(0, 0, 0, .125);
-            border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-        }
-
-        .card-body {
-            --bs-blue: #0d6efd;
-            --bs-indigo: #6610f2;
-            --bs-purple: #6f42c1;
-            --bs-pink: #d63384;
-            --bs-red: #dc3545;
-            --bs-orange: #fd7e14;
-            --bs-yellow: #ffc107;
-            --bs-green: #198754;
-            --bs-teal: #20c997;
-            --bs-cyan: #0dcaf0;
-            --bs-white: #fff;
-            --bs-gray: #6c757d;
-            --bs-gray-dark: #343a40;
-            --bs-primary: #0d6efd;
-            --bs-secondary: #6c757d;
-            --bs-success: #198754;
-            --bs-info: #0dcaf0;
-            --bs-warning: #ffc107;
-            --bs-danger: #dc3545;
-            --bs-light: #f8f9fa;
-            --bs-dark: #212529;
-            --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-            font-family: var(--bs-font-sans-serif);
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-            color: #212529;
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
-            word-wrap: break-word;
-            box-sizing: border-box;
-            flex: 1 1 auto;
-            padding: 1rem 1rem;
-        }
-
-        .card-footer {
-            --bs-blue: #0d6efd;
-            --bs-indigo: #6610f2;
-            --bs-purple: #6f42c1;
-            --bs-pink: #d63384;
-            --bs-red: #dc3545;
-            --bs-orange: #fd7e14;
-            --bs-yellow: #ffc107;
-            --bs-green: #198754;
-            --bs-teal: #20c997;
-            --bs-cyan: #0dcaf0;
-            --bs-white: #fff;
-            --bs-gray: #6c757d;
-            --bs-gray-dark: #343a40;
-            --bs-primary: #0d6efd;
-            --bs-secondary: #6c757d;
-            --bs-success: #198754;
-            --bs-info: #0dcaf0;
-            --bs-warning: #ffc107;
-            --bs-danger: #dc3545;
-            --bs-light: #f8f9fa;
-            --bs-dark: #212529;
-            --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-            font-family: var(--bs-font-sans-serif);
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
-            word-wrap: break-word;
-            box-sizing: border-box;
-            padding: .5rem 1rem;
-            background-color: rgba(0, 0, 0, .03);
-            border-top: 1px solid rgba(0, 0, 0, .125);
-            color: #6c757d !important;
-            border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
-        }
-    </style>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>RE: ' . $subject . '</title>
 </head>
-<body>
-    <div class="card">
-        <div class="card-header">
-            Dear ' . $name . '
-        </div>
-        <div class="card-body">
-            <p class="card-text">I appreciate your message regarding ' . $subject . '. Rest assured, I\'ve received it and will respond promptly.
-                <br>I\'ll be in
-                touch as soon as possible.<br>Have a great day!
-            </p>
-        </div>
-        <div class="card-footer text-muted">
-            Warm regards,<br>
-            <a href="http://resume-jay.is-best.net/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Jay Chauhan</a>
-        </div>
-    </div>
-</body>
+
+<body style="height: 100% !important; width: 100% !important; background-color: #e1e5ea; margin: 0; padding: 0; background-color: #F0F2F4;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%; background-color: #F0F2F4;">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; background-color: #F0F2F4;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 600px;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center; padding-top: 40px; padding-bottom: 20px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #FFFFFF;padding-bottom: 40px;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                    style="width: 520px;">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="padding-top: 40px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333">
+                                                Hello <a href="mailto:{{bas_users.user_email}}"
+                                                    style="color:#333333; text-decoration: none;">' . $name . '</a>,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="padding-top: 12px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333">
+                                                I appreciate your message regarding <strong>"' . $subject . '"</strong><br>
+                                                Request. Rest assured, I\'ve received it and will respond promptly. <br>
+                                                I\'ll be in touch as soon as possible. <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding-top:20px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                style="padding-left:30px;padding-top: 10px; padding-bottom: 10px; background-color: #222222; border-top-left-radius: 4px; border-bottom-left-radius: 4px;">
+                                                                &nbsp;
+                                                            </td>
+                                                            <td
+                                                                style="background-color:#222222; font-family:helvetica,arial; font-size:16px; line-height:24px; font-weight: 700; color:#FFFFFF; padding-top: 10px; padding-bottom: 10px;">
+                                                                <a style="color:#FFFFFF; text-decoration: none;"
+                                                                    href="http://resume-jay.is-best.net" target="_blank" rel="noopener">
+                                                                    Visit Website
+                                                                </a>
+                                                            </td>
+                                                            <td
+                                                                style="padding-right:30px;padding-top: 10px; padding-bottom: 10px; background-color: #222222; border-top-right-radius: 4px; border-bottom-right-radius: 4px;">
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="padding-top: 30px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333">
+                                                Or paste this link into your browser:
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="padding-top: 12px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333; word-break: break-all;">
+                                                <a href="http://resume-jay.is-best.net" target="_blank" rel="noopener"
+                                                    style="color:#2D8CFF; text-decoration: none;">
+                                                    http://resume-jay.is-best.net
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="padding-top: 12px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333">
+                                                Have a great day!
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding-top: 20px; padding-bottom: 30px; background-color: #FFFFFF; border-top-color:#F0F2F4; border-top-style: solid; border-top-width: 1px;">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="font-family:helvetica,arial; font-size:12px; line-height:18px; color:#999999; text-align:center; padding-top: 10px;">
+                                                Copyright &copy;2023 Jay Chauhan. All rights reserved.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding-top: 10px; padding-bottom: 40px; font-family:helvetica,arial; font-size:11px; line-height:15px;  color: #999;">
+                                My mailing address is:
+                                <br />
+                                1, Global Residency, Nr. Raj Harmony,
+                                <br />
+                                Ugat - Bhesan Road, Jahangirabad, Surat, Gujarat 395009
+                                <br />
+                                +91 93134 40532
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 </html>';
 
 // Send the email
