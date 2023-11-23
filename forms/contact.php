@@ -38,7 +38,7 @@ $mail->setFrom('jay.chauhan3042@gmail.com', 'Jay Chauhan');
 $mail->addAddress($email, $name);
 
 // Set the email subject
-$mail->Subject = 'Thank You ' . $name;
+$mail->Subject = 'RE: ' . $subject;
 
 // Set the HTML content of the email body
 $mail->Body = '<!DOCTYPE html
