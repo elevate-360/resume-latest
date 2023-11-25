@@ -93,7 +93,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                                                             <td
                                                                 style="background-color:#222222; font-family:helvetica,arial; font-size:16px; line-height:24px; font-weight: 700; color:#FFFFFF; padding-top: 10px; padding-bottom: 10px;">
                                                                 <a style="color:#FFFFFF; text-decoration: none;"
-                                                                    href="http://resume-jay.is-best.net" target="_blank" rel="noopener">
+                                                                    href="http://resume.djjay.online" target="_blank" rel="noopener">
                                                                     Visit Website
                                                                 </a>
                                                             </td>
@@ -115,9 +115,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                                         <tr>
                                             <td
                                                 style="padding-top: 12px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333; word-break: break-all;">
-                                                <a href="http://resume-jay.is-best.net" target="_blank" rel="noopener"
+                                                <a href="http://resume.djjay.online" target="_blank" rel="noopener"
                                                     style="color:#2D8CFF; text-decoration: none;">
-                                                    http://resume-jay.is-best.net
+                                                    http://resume.djjay.online
                                                 </a>
                                             </td>
                                         </tr>
