@@ -76,8 +76,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                                         <tr>
                                             <td
                                                 style="padding-top: 12px; font-family:helvetica,arial; font-size:14px; line-height:20px; color:#333333">
-                                                I appreciate your message regarding <strong>"' . $subject . '"</strong><br>
-                                                Request. Rest assured, I\'ve received it and will respond promptly. <br>
+                                                I appreciate your message regarding <strong>"' . $subject . '"</strong><br>. Rest assured, I\'ve received it and will respond promptly. <br>
                                                 I\'ll be in touch as soon as possible. <br>
                                             </td>
                                         </tr>
